@@ -20,7 +20,7 @@ class Solution {
        }
     ArrayList<Integer> range = new ArrayList<>();
     
-    for(int i = min; i <= max ; i++){
+    for(int i = min+1; i < max ; i++){
         range.add(i);
     }
        for(int i = 0 ; i < range.size() ; i++){
