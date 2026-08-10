@@ -6,12 +6,12 @@ class Solution {
             map.put(x,map.getOrDefault(x,0) +1);
          }
 
-        int[] unique = Arrays.stream(nums).distinct().toArray();
-         for(int num : unique){
-            if(map.get(num) == 2){
-                duplicate.add(num);
+        for(int i = 0 ; i < nums.length ; i++){
+            if(map.get(nums[i]) == 2){
+                duplicate.add(nums[i]);
             }
-         }
-         return duplicate;
+        }
+
+        return new ArrayList<>(new HashSet<>(duplicate));
     }
 }
