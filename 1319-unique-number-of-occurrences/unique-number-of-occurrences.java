@@ -6,15 +6,15 @@ class Solution {
             map.put( num , map.getOrDefault(num , 0) + 1);
         }
 
- HashSet<Integer> set = new HashSet<>();
- int i = 0;
- for(int num : arr){
-    if(!set.contains(num)){
-        set.add(num);
-        arr[i] = num;
-        i++;
+    HashSet<Integer> set = new HashSet<>();
+    int i = 0;
+    for(int num : arr){
+         if(!set.contains(num)){
+            set.add(num);
+            arr[i] = num;
+            i++;
+        }
     }
- }
 
     HashSet<Integer> set1 = new HashSet<>();
     for( int x : set){
