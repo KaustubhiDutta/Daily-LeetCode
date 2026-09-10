@@ -8,11 +8,7 @@ class Solution {
             map1.put(num1 , map1.getOrDefault(num1,0) + 1);
         }
 
-        HashMap<Integer,Integer> map2 = new HashMap<>();
-
-        for(int num2 : nums2){
-            map2.put(num2 , map2.getOrDefault(num2 , 0) + 1);
-        }
+      
 
         ArrayList<Integer> list = new ArrayList<>();
         
