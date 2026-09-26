@@ -11,7 +11,27 @@ class Solution {
             }
         }
 
-        Arrays.sort(nums);
+        int count0 = 0 ;
+        int count1 = 0 ;
+        for(int i = 0 ; i < n ; i++){
+            if(nums[i] == 0){
+                count0++;
+            }
+            else {
+                count1++;
+            }
+        }
+
+        int k = 0;
+        while(k < count0){
+            nums[k] = 0;
+            k++;
+        }
+        
+        while(k < n){
+            nums[k] = 1;
+            k++;
+        }
         
         return nums;
     }
