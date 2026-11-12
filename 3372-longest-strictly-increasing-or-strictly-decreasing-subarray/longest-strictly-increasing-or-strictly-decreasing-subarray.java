@@ -17,7 +17,7 @@ class Solution {
         }
 
         int len2 = 0;
-        for(int i = 0; i < n-1; i++){
+        for(int i = 0; i < n; i++){
             int j = i;
             while(j<n-1 && nums[j] > nums[j+1]){
             j++;
